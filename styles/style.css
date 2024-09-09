@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* shared style */
+  .container{
+    max-width: 90%;
+    margin: 5rem auto;
+  }
+  .display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.btn-pink{
+    background-color: #E02C6D;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFF;
+    padding: 12px 17px;
+    border-radius: 41px;
+    border: none;
+}
+/* header styles */
+  /* navbar styles */
+  header{
+    padding: 12px;
+  }
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo{
+    font-size:1.8rem ;
+    font-weight: 700;
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 30px;
+   
+  }
+  .nav-link{
+    font-weight: 600;
+    text-decoration: none;
+    color: #3A3A3A;
+  }
+  .menubars{
+    display: none;
+  }
+ /* banner style */
+.banner{
+    margin: 0 auto;
+    padding:1rem;
+    gap:1rem;
+
+}
+
+.banner-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-bottom: 16px;
+}
+.banner-description{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.banner-image{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+ .circle-image img{
+    z-index: 1;
+    max-width: 100%;
+  }
+  .camera-image{
+    position: absolute;
+    bottom: 38px;
+    right: 4px;
+    z-index: 10;
+
+ 
+    
+}
+/* commercial compay section */
+.commercial-companies{
+  border-top: 2px solid  rgba(233, 207, 207, 0.737) ;
+  border-bottom: 2px solid  rgba(225, 210, 210, 0.835);
+  margin:100px auto ;
+  
+}
+
+.company{
+  padding:30px;
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   gap: 0.5em;
+   justify-content: center;
+   align-items: center;
+   
+   
+    
+    
+}
+/* popular collection style */
+.popular-collection{
+    max-width: 1047px;
+    margin: 0 auto;
+    padding: 12px;
+}
+.popular-collection-title{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+}
+.collection-cards{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    padding: 15px;
+    box-shadow: 0 4px 30px 0  rgba(0, 0, 0, 0.06);
+}
+.card-image img{
+    border-radius: 5px;
+    width: 100%;
+    vertical-align: middle;
+}
+.card-title{
+  font-size: 1.72rem;
+  font-weight: 500;
+  color: #18191F;
+  margin: 6px 0px;
+}
+.card-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin:6px 0px;
+    color:#000;
+}
+.popular-collection .card p , .featured-description{
+    font-size: 14px;
+    font-weight: 700;
+    color:#787885 ;
+    text-align:start;
+}
+.popular-collection a{
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 800;
+    float: right;
+    padding: 2px;
+}
+/* Featured style */
+.featured{
+  max-width: 1047px;
+  margin:35px auto;
+}
+.featured-content{
+  padding:1.5rem;
+  display: flex;
+   gap:1.5rem;
+   justify-content: center;
+   align-items: center;
+}
+.featured-details .featured-title{
+ font-size: 2.38rem;
+ font-weight: 700;
+ color: #0A0826;
+ margin: 0;
+ }
+ .featured-image{
+  padding: 3px;
+
+ }
+ .featured-image img{
+  width: 100%;
+  vertical-align: middle;
+
+ }
+/* Footer style */
+.footer{
+    background-color: #0A0826;
+    max-height: 238px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    
+}
+.footer p{
+    font-size: 14px;
+    color: #D9DBE1;
+    font-weight: 700;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFFFFF;
+}
+/* Responsive for small device */
+@media screen  and (max-width:576px){
+  .featured-content{
+    flex-direction: column;
+  }
+  .nav-links{
+    display: none;
+  }
+  .menubars{
+    display: block;
+  }
+  .banner{
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  
+   .circle-image{
+    max-width:250px;
+    max-height: 250px;
+   }
+    .camera-image img{
+      width: 170px;
+      height: 170px;
+      bottom: 90px;
+      left:123px;
+
+   }
+  .collection-cards{
+    grid-template-columns: repeat(1 ,1fr);
+  }
+  
+  .company{
+    grid-template-columns: repeat(2, 0.5fr);
+
+  }
+  .featured{
+    padding: 2px;
+  }
+  
+  
+}
+
+
